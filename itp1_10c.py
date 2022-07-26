@@ -1,0 +1,10 @@
+while True:
+    n = int(input())
+    if n == 0:
+        break
+    s = list(map(int, input().split()))
+    m = sum(s) / n
+    ans = 0
+    for i in range(n):
+        ans += ((s[i] - m) ** 2) / n
+    print(ans ** 0.5)
